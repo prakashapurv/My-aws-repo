@@ -1,37 +1,12 @@
-Generated at 2017-08-11 10:11:43 +0000
-Chef::Exceptions::FileNotFound: template[/var/www/html/index.html] (mycookbook::webserver line 12) had an error: Chef::Exceptions::FileNotFound: Cookbook 'mycookbook' (0.1.0) does not contain a file at any of these locations:
-  templates/ubuntu-16.04/index.html
-  templates/ubuntu/index.html
-  templates/default/index.html
-  templates/index.html
-
-This cookbook _does_ contain: ['/home/ubuntu/.chef/local-mode-cache/cache/cookbooks/mycookbook/templates/index.html.erb~','/home/ubuntu/.chef/local-mode-cache/cache/cookbooks/mycookbook/templates/index.html.erb']
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/cookbook_version.rb:331:in `preferred_manifest_record'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/cookbook_version.rb:339:in `preferred_filename_on_disk_location'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/provider/template_finder.rb:40:in `find'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/provider/template/content.rb:32:in `template_location'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/provider/template.rb:49:in `block in define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/mixin/why_run.rb:314:in `assert'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/provider/template.rb:47:in `define_resource_requirements'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/provider.rb:132:in `run_action'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource.rb:591:in `run_action'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/runner.rb:69:in `run_action'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/runner.rb:97:in `block (2 levels) in converge'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/runner.rb:97:in `each'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/runner.rb:97:in `block in converge'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource_collection/resource_list.rb:94:in `block in execute_each_resource'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/resource_collection/resource_list.rb:92:in `execute_each_resource'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/runner.rb:96:in `converge'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/client.rb:669:in `block in converge'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/client.rb:664:in `catch'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/client.rb:664:in `converge'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/client.rb:703:in `converge_and_save'
-/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/client.rb:283:in `run'
+Generated at 2017-08-11 12:43:08 +0000
+Net::HTTPServerException: 412 "Precondition Failed"
+/opt/chefdk/embedded/lib/ruby/2.1.0/net/http/response.rb:119:in `error!'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/http.rb:146:in `request'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/http.rb:127:in `post'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/policy_builder/expand_node_object.rb:204:in `sync_cookbooks'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/policy_builder/expand_node_object.rb:83:in `setup_run_context'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/client.rb:510:in `setup_run_context'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/client.rb:280:in `run'
 /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/application.rb:286:in `block in fork_chef_client'
 /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/application.rb:274:in `fork'
 /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.12.15/lib/chef/application.rb:274:in `fork_chef_client'

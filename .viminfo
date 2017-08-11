@@ -7,11 +7,16 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :wq!
+:q!
 :q
 
 # Search String History (newest to oldest):
+? @$
 
 # Expression History (newest to oldest):
 
@@ -20,7 +25,9 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+""0	LINE	0
+	   action :create
+"1	LINE	0
 	   action :create
 "2	LINE	0
 	'
@@ -42,24 +49,29 @@
 	 
 
 # File marks:
-'0  27  28  ~/cookbooks/mycookbook/.chef/prakashapurv.pem
-'1  16  0  ~/cookbooks/mycookbook/recipes/webserver.rb
-'2  15  11  ~/cookbooks/mycookbook/recipes/webserver.rb
-'3  5  6  ~/cookbooks/mycookbook/templates/index.html.erb
-'4  5  0  ~/cookbooks/mycookbook/recipes/webserver.rb
-'5  22  0  ~/cookbooks/mycookbook/recipes/default.rb
-'6  23  0  ~/cookbooks/mycookbook/recipes/default.rb
-'7  21  0  ~/cookbooks/mycookbook/recipes/default.rb
-'8  17  30  ~/cookbooks/mycookbook/recipes/default.rb
+'0  7  13  ~/cookbooks/mycookbook/metadata.rb
+'1  4  36  ~/cookbooks/mycookbook/templates/index.html.erb
+'2  8  0  ~/cookbooks/mycookbook/templates/default
+'3  27  28  ~/cookbooks/mycookbook/.chef/prakashapurv.pem
+'4  16  0  ~/cookbooks/mycookbook/recipes/webserver.rb
+'5  15  11  ~/cookbooks/mycookbook/recipes/webserver.rb
+'6  6  6  ~/cookbooks/mycookbook/templates/index.html.erb
+'7  5  0  ~/cookbooks/mycookbook/recipes/webserver.rb
+'8  22  0  ~/cookbooks/mycookbook/recipes/default.rb
+'9  23  0  ~/cookbooks/mycookbook/recipes/default.rb
 
 # Jumplist (newest first):
+-'  7  13  ~/cookbooks/mycookbook/metadata.rb
+-'  1  0  ~/cookbooks/mycookbook/metadata.rb
+-'  4  36  ~/cookbooks/mycookbook/templates/index.html.erb
+-'  1  0  ~/cookbooks/mycookbook/templates/index.html.erb
+-'  8  0  ~/cookbooks/mycookbook/templates/default
 -'  27  28  ~/cookbooks/mycookbook/.chef/prakashapurv.pem
 -'  1  0  ~/cookbooks/mycookbook/.chef/prakashapurv.pem
 -'  16  0  ~/cookbooks/mycookbook/recipes/webserver.rb
 -'  1  0  ~/cookbooks/mycookbook/recipes/webserver.rb
 -'  15  11  ~/cookbooks/mycookbook/recipes/webserver.rb
--'  5  6  ~/cookbooks/mycookbook/templates/index.html.erb
--'  1  0  ~/cookbooks/mycookbook/templates/index.html.erb
+-'  6  6  ~/cookbooks/mycookbook/templates/index.html.erb
 -'  5  0  ~/cookbooks/mycookbook/recipes/webserver.rb
 -'  22  0  ~/cookbooks/mycookbook/recipes/default.rb
 -'  1  0  ~/cookbooks/mycookbook/recipes/default.rb
@@ -117,8 +129,6 @@
 -'  17  30  ~/cookbooks/mycookbook/recipes/default.rb
 -'  11  0  ~/cookbooks/mycookbook/recipes/default.rb
 -'  7  30  ~/cookbooks/mycookbook/recipes/default.rb
--'  5  6  ~/cookbooks/mycookbook/templates/index.html.erb
--'  1  0  ~/cookbooks/mycookbook/templates/index.html.erb
 -'  19  2  ~/cookbooks/mycookbook/recipes/webserver.rb
 -'  22  0  ~/cookbooks/mycookbook/recipes/default.rb
 -'  1  0  ~/cookbooks/mycookbook/recipes/default.rb
@@ -148,12 +158,24 @@
 -'  17  30  ~/cookbooks/mycookbook/recipes/default.rb
 -'  11  0  ~/cookbooks/mycookbook/recipes/default.rb
 -'  7  30  ~/cookbooks/mycookbook/recipes/default.rb
--'  5  6  ~/cookbooks/mycookbook/templates/index.html.erb
+-'  4  36  ~/cookbooks/mycookbook/templates/index.html.erb
 -'  1  0  ~/cookbooks/mycookbook/templates/index.html.erb
--'  5  6  ~/cookbooks/mycookbook/templates/index.html.erb
--'  16  0  ~/cookbooks/mycookbook/recipes/webserver.rb
 
 # History of marks within files (newest to oldest):
+
+> ~/cookbooks/mycookbook/metadata.rb
+	"	7	13
+	.	7	13
+	+	7	13
+
+> ~/cookbooks/mycookbook/templates/index.html.erb
+	"	4	36
+	^	4	37
+	.	4	36
+	+	7	0
+	+	6	6
+	+	5	0
+	+	4	36
 
 > ~/cookbooks/mycookbook/.chef/prakashapurv.pem
 	"	27	28
@@ -182,12 +204,6 @@
 	+	16	16
 	+	15	24
 	+	16	0
-
-> ~/cookbooks/mycookbook/templates/index.html.erb
-	"	5	6
-	.	5	6
-	+	6	0
-	+	5	6
 
 > ~/cookbooks/mycookbook/recipes/default.rb
 	"	22	0
